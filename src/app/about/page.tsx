@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function AboutPage() {
@@ -20,9 +21,15 @@ export default function AboutPage() {
           {/* Left - Photo + Basic Info */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
-              <div className="bg-gradient-to-br from-teal-700 to-teal-500 h-48 flex items-center justify-center text-7xl">
-                👨‍⚕️
-              </div>
+<div className="relative h-64 overflow-hidden bg-gradient-to-br from-teal-700 to-teal-500">
+  <Image
+    src="/images/doctor-abu-kalam.jpeg"
+    alt="ডাঃ মোঃ আবু কালাম — হৃদরোগ ও মেডিসিন বিশেষজ্ঞ"
+    fill
+    sizes="(max-width: 1024px) 100vw, 33vw"
+    className="object-cover object-top"
+  />
+</div>
               <div className="p-6 text-center">
                 <h2 className="text-xl font-bold text-gray-900 mb-1">
                   {t("ডাঃ মোঃ আবু কালাম", "Dr. Md. Abu Kalam")}
@@ -53,7 +60,20 @@ export default function AboutPage() {
             {/* Qualifications */}
             <div className="bg-white rounded-2xl shadow-md p-6 border border-gray-100">
               <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <span className="text-teal-600">🎓</span>
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    className="h-5 w-5"
+    aria-hidden="true"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3 2.5 8 12 13l9.5-5L12 3Z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M6.5 10.1v5.2c3.4 2.4 7.6 2.4 11 0v-5.2M21.5 8v6" />
+  </svg>
+</span>
                 {t("শিক্ষাগত যোগ্যতা", "Educational Qualifications")}
               </h3>
               <ul className="space-y-3">
@@ -75,7 +95,20 @@ export default function AboutPage() {
             {/* About Text */}
             <div className="bg-white rounded-2xl shadow-md p-6 border border-gray-100">
               <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <span className="text-teal-600">ℹ️</span>
+<span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    className="h-5 w-5"
+    aria-hidden="true"
+  >
+    <circle cx="12" cy="12" r="9" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 11v5m0-8h.01" />
+  </svg>
+</span>
                 {t("সংক্ষিপ্ত পরিচিতি", "Brief Introduction")}
               </h3>
               <p className="text-gray-700 leading-relaxed">
