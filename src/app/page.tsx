@@ -71,7 +71,20 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Chamber Time */}
             <div className="bg-teal-50 rounded-xl p-6 border border-teal-100">
-              <div className="text-3xl mb-3">🕒</div>
+<div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    className="h-6 w-6"
+    aria-hidden="true"
+  >
+    <circle cx="12" cy="12" r="9" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 2" />
+  </svg>
+</div>
               <h3 className="font-bold text-teal-900 mb-1">
                 {t("চেম্বারের সময়", "Chamber Time")}
               </h3>
