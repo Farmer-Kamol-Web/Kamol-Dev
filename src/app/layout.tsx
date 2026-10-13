@@ -22,6 +22,8 @@ export const metadata: Metadata = {
 
 import { LanguageProvider } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function RootLayout({
   children,
@@ -33,7 +35,9 @@ export default function RootLayout({
       <body className={`${inter.variable} ${notoBengali.variable} antialiased`}>
 <LanguageProvider>
   <Navbar />
-  {children}
+  <main className="min-h-[70vh]">{children}</main>
+  <Footer />
+  <WhatsAppButton />
 </LanguageProvider>
       </body>
     </html>
