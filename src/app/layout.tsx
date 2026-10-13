@@ -16,8 +16,32 @@ const notoBengali = Noto_Sans_Bengali({
 });
 
 export const metadata: Metadata = {
-  title: "ডাঃ মোঃ আবু কালাম | Dr. Md. Abu Kalam",
-  description: "হৃদরোগ ও মেডিসিন বিশেষজ্ঞ | Cardiologist & Medicine Specialist",
+  title: {
+    default: "ডাঃ মোঃ আবু কালাম | হৃদরোগ বিশেষজ্ঞ",
+    template: "%s | ডাঃ মোঃ আবু কালাম",
+  },
+  description:
+    "ডাঃ মোঃ আবু কালাম — হৃদরোগ ও মেডিসিন বিশেষজ্ঞ। যোগ্যতা, চেম্বারের ঠিকানা, রোগী দেখার সময় এবং সিরিয়ালের জন্য যোগাযোগের তথ্য জানুন।",
+  keywords: [
+    "ডাঃ মোঃ আবু কালাম",
+    "Dr. Md. Abu Kalam",
+    "হৃদরোগ বিশেষজ্ঞ",
+    "Cardiologist",
+    "Medicine Specialist",
+    "শেরপুর বগুড়া",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "bn_BD",
+    title: "ডাঃ মোঃ আবু কালাম | হৃদরোগ ও মেডিসিন বিশেষজ্ঞ",
+    description:
+      "ডাক্তারের যোগ্যতা, চেম্বারের সময়, ঠিকানা এবং সিরিয়ালের তথ্য জানুন।",
+    siteName: "Dr. Md. Abu Kalam",
+  },
 };
 
 import { LanguageProvider } from "@/context/LanguageContext";
