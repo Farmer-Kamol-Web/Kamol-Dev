@@ -66,59 +66,117 @@ export default function Home() {
       </section>
 
       {/* Quick Info Cards */}
-      <section className="py-12 bg-white">
+      <section className="bg-white py-14 md:py-16">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+
             {/* Chamber Time */}
-            <div className="bg-teal-50 rounded-xl p-6 border border-teal-100">
-<div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    className="h-6 w-6"
-    aria-hidden="true"
-  >
-    <circle cx="12" cy="12" r="9" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 2" />
-  </svg>
-</div>
-              <h3 className="font-bold text-teal-900 mb-1">
+            <div className="group rounded-2xl border border-teal-100 bg-teal-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-lg">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-100 text-teal-700 transition-colors group-hover:bg-teal-700 group-hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  className="h-7 w-7"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 7v5l3 2"
+                  />
+                </svg>
+              </div>
+
+              <h3 className="mb-2 text-lg font-bold text-teal-950">
                 {t("চেম্বারের সময়", "Chamber Time")}
               </h3>
-              <p className="text-gray-700">
+              <p className="mb-1 text-gray-600">
                 {t("প্রতি বুধবার", "Every Wednesday")}
               </p>
-              <p className="text-teal-700 font-semibold">
+              <p className="font-semibold text-teal-800">
                 {t("বিকাল ৩টা – রাত ৮টা", "3:00 PM – 8:00 PM")}
               </p>
             </div>
 
-            {/* Location */}
-            <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
-              <div className="text-3xl mb-3">📍</div>
-              <h3 className="font-bold text-blue-900 mb-1">
+            {/* Chamber Address */}
+            <div className="group rounded-2xl border border-blue-100 bg-blue-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-700 transition-colors group-hover:bg-blue-700 group-hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  className="h-7 w-7"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"
+                  />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+              </div>
+
+              <h3 className="mb-2 text-lg font-bold text-blue-950">
                 {t("চেম্বারের ঠিকানা", "Chamber Address")}
               </h3>
-              <p className="text-gray-700">
+              <p className="leading-relaxed text-gray-700">
                 {t(
-                  "শাহ্ সুলতান হসপিটাল, শেরপুর, বগুড়া",
-                  "Shah Sultan Hospital, Sherpur, Bogura"
+                  "শাহ্ সুলতান হসপিটাল অ্যান্ড ডায়াগনস্টিক সেন্টার, হাসপাতাল রোড, শেরপুর, বগুড়া",
+                  "Shah Sultan Hospital & Diagnostic Center, Hospital Road, Sherpur, Bogura"
                 )}
               </p>
             </div>
 
-            {/* Serial */}
-            <div className="bg-red-50 rounded-xl p-6 border border-red-100">
-              <div className="text-3xl mb-3">📞</div>
-              <h3 className="font-bold text-red-900 mb-1">
-                {t("সিরিয়ালের জন্য", "For Serial")}
+            {/* Appointment Numbers */}
+            <div className="group rounded-2xl border border-rose-100 bg-rose-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-100 text-rose-700 transition-colors group-hover:bg-rose-700 group-hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  className="h-7 w-7"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"
+                  />
+                </svg>
+              </div>
+
+              <h3 className="mb-2 text-lg font-bold text-rose-950">
+                {t("সিরিয়ালের জন্য", "For Appointment")}
               </h3>
-              <p className="text-gray-700 font-medium">01709-068314</p>
-              <p className="text-gray-700 font-medium">01709-068315</p>
+              <p className="mb-3 text-gray-600">
+                {t("ফোন করে সিরিয়াল নিন", "Call to book an appointment")}
+              </p>
+
+              <div className="space-y-2">
+                <a
+                  href="tel:01709068314"
+                  className="block font-semibold text-rose-800 transition hover:text-rose-950 hover:underline"
+                >
+                  01709-068314
+                </a>
+                <a
+                  href="tel:01709068315"
+                  className="block font-semibold text-rose-800 transition hover:text-rose-950 hover:underline"
+                >
+                  01709-068315
+                </a>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
