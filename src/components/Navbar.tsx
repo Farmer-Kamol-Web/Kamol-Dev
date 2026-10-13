@@ -73,16 +73,21 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
-          >
+<button
+  type="button"
+  onClick={() => setIsOpen(!isOpen)}
+  aria-label={isOpen ? "মেনু বন্ধ করুন" : "মেনু খুলুন"}
+  aria-expanded={isOpen}
+  aria-controls="mobile-navigation"
+  className="md:hidden rounded-xl p-2 text-gray-700 transition hover:bg-teal-50 hover:text-teal-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700"
+>
             <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+  className="h-6 w-6"
+  fill="none"
+  stroke="currentColor"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
               {isOpen ? (
                 <path
                   strokeLinecap="round"
@@ -104,7 +109,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-2">
+          <div id="mobile-navigation" className="md:hidden space-y-2 border-t border-gray-100 pb-4 pt-3">
             {navItems.map((item) => (
               <Link
                 key={item.href}

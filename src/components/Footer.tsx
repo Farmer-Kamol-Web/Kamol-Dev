@@ -62,16 +62,54 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-3">
               {t("যোগাযোগ", "Contact")}
             </h3>
-            <ul className="space-y-2 text-sm text-teal-200">
-              <li>📞 01709-068314</li>
-              <li>📞 01709-068315</li>
-              <li>
-                📍 {t("শেরপুর, বগুড়া", "Sherpur, Bogura")}
-              </li>
-              <li>
-                🕒 {t("বুধবার ৩টা–৮টা", "Wed 3PM–8PM")}
-              </li>
-            </ul>
+<ul className="space-y-3 text-sm text-teal-200">
+  <li>
+    <a href="tel:01709068314" className="transition hover:text-white hover:underline">
+      01709-068314
+    </a>
+  </li>
+  <li>
+    <a href="tel:01709068315" className="transition hover:text-white hover:underline">
+      01709-068315
+    </a>
+  </li>
+  <li>
+    {t("শেরপুর, বগুড়া", "Sherpur, Bogura")}
+  </li>
+  <li>
+    {t("বুধবার ৩টা–৮টা", "Wednesday, 3 PM–8 PM")}
+  </li>
+  <li>
+    <a
+      href="https://wa.me/8801709068314"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 font-medium transition hover:text-white hover:underline"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        className="h-5 w-5"
+        aria-hidden="true"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M20 11.5a8.4 8.4 0 0 1-12.7 7.2L3 20l1.3-4.1A8.5 8.5 0 1 1 20 11.5Z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M8.5 8.5c.5 2 2 3.5 4 4"
+        />
+      </svg>
+      {t("WhatsApp-এ যোগাযোগ", "Contact on WhatsApp")}
+    </a>
+  </li>
+</ul>
           </div>
         </div>
 
