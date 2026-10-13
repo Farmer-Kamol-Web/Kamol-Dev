@@ -1,7 +1,10 @@
+
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
+
 
 export default function Home() {
   const { t } = useLanguage();
@@ -43,12 +46,21 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right - Doctor Image Placeholder */}
-            <div className="flex-shrink-0">
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-white/20 border-4 border-white/40 flex items-center justify-center text-6xl">
-                👨‍⚕️
-              </div>
-            </div>
+
+{/* Right - Doctor's Real Photo */}
+<div className="flex-shrink-0">
+ <div className="relative w-48 h-48 md:w-68 md:h-68 overflow-hidden rounded-full border-4 border-white/70 shadow-xl">
+    <Image
+      src="/images/doctor-abu-kalam.jpeg"
+      alt="ডাঃ মোঃ আবু কালাম — হৃদরোগ ও মেডিসিন বিশেষজ্ঞ"
+      fill
+      priority
+      sizes="(max-width: 768px) 192px, 256px"
+      className="object-cover object-top scale-110"
+    />
+  </div>
+</div>
+
           </div>
         </div>
       </section>
