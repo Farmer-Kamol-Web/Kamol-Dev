@@ -25,9 +25,11 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Phone Card */}
           <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 text-center hover:shadow-lg transition">
-            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
-              📞
-            </div>
+<div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-teal-100 text-teal-700">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-7 w-7" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" />
+  </svg>
+</div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">
               {t("ফোন করুন", "Call Us")}
             </h3>
@@ -52,9 +54,12 @@ export default function ContactPage() {
 
           {/* WhatsApp Card */}
           <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 text-center hover:shadow-lg transition">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
-              💬
-            </div>
+<div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-green-100 text-green-700">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-7 w-7" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M20 11.5a8.4 8.4 0 0 1-12.7 7.2L3 20l1.3-4.1A8.5 8.5 0 1 1 20 11.5Z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M8.5 8.5c.5 2 2 3.5 4 4" />
+  </svg>
+</div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">
               {t("WhatsApp", "WhatsApp")}
             </h3>
@@ -73,9 +78,12 @@ export default function ContactPage() {
 
           {/* Location Card */}
           <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 text-center hover:shadow-lg transition md:col-span-2">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
-              📍
-            </div>
+<div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-7 w-7" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+    <circle cx="12" cy="10" r="2.5" />
+  </svg>
+</div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">
               {t("চেম্বারের ঠিকানা", "Chamber Address")}
             </h3>

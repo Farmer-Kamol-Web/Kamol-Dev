@@ -27,7 +27,11 @@ export default function ChamberPage() {
             <div className="p-6 space-y-5">
               {/* Hospital Name */}
               <div className="flex items-start gap-4">
-                <div className="text-2xl">🏥</div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 7h2m2 0h2M9 11h2m2 0h2M10 21v-5h4v5" />
+  </svg>
+</div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">
                     {t("হাসপাতাল", "Hospital")}
@@ -43,7 +47,12 @@ export default function ChamberPage() {
 
               {/* Address */}
               <div className="flex items-start gap-4">
-                <div className="text-2xl">📍</div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-700">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+    <circle cx="12" cy="10" r="2.5" />
+  </svg>
+</div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">
                     {t("ঠিকানা", "Address")}
@@ -59,7 +68,12 @@ export default function ChamberPage() {
 
               {/* Time */}
               <div className="flex items-start gap-4">
-                <div className="text-2xl">🕒</div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-700">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6" aria-hidden="true">
+    <circle cx="12" cy="12" r="9" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 2" />
+  </svg>
+</div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">
                     {t("সময়সূচি", "Schedule")}
@@ -96,7 +110,11 @@ export default function ChamberPage() {
                   href="tel:01709068314"
                   className="flex items-center gap-3 bg-gray-50 hover:bg-teal-50 border border-gray-200 hover:border-teal-300 rounded-xl px-5 py-4 transition"
                 >
-                  <span className="text-2xl">📞</span>
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" />
+  </svg>
+</span>
                   <div>
                     <p className="text-sm text-gray-500">
                       {t("সিরিয়াল নাম্বার ১", "Serial Number 1")}
@@ -126,7 +144,10 @@ export default function ChamberPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3.5 rounded-xl transition"
               >
-                <span className="text-xl">💬</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5" aria-hidden="true">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M20 11.5a8.4 8.4 0 0 1-12.7 7.2L3 20l1.3-4.1A8.5 8.5 0 1 1 20 11.5Z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.5 8.5c.5 2 2 3.5 4 4" />
+</svg>
                 {t("WhatsApp-এ সিরিয়াল নিন", "Take Serial on WhatsApp")}
               </a>
             </div>
