@@ -1,10 +1,16 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
 
 export default function Footer() {
   const { t } = useLanguage();
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="bg-teal-900 text-white mt-16">
@@ -116,7 +122,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-teal-700 mt-8 pt-6 text-center text-sm text-teal-300">
           <p>
-            © {new Date().getFullYear()} {t("ডাঃ মোঃ আবু কালাম", "Dr. Md. Abu Kalam")}.{" "}
+            © {currentYear ?? ""} {t("ডাঃ মোঃ আবু কালাম", "Dr. Md. Abu Kalam")}.{" "}
             {t("সর্বস্বত্ব সংরক্ষিত।", "All rights reserved.")}
           </p>
         </div>
