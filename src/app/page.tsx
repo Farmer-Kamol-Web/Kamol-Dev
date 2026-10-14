@@ -11,9 +11,22 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-600 text-white py-16 md:py-24">
-        <div className="container-custom">
+{/* Hero Section */}
+<section
+  className="relative overflow-hidden bg-teal-900 text-white py-16 md:py-24"
+  style={{
+    backgroundImage: "url('/images/hero-bg.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div
+    aria-hidden="true"
+    className="absolute inset-0 z-0 bg-gradient-to-r from-teal-950/90 via-teal-900/75 to-teal-800/50"
+  />
+
+  <div className="container-custom relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-10">
             {/* Left Content */}
             <div className="flex-1 text-center md:text-left">
@@ -66,7 +79,61 @@ export default function Home() {
       </section>
 
       {/* Quick Info Cards */}
-      <section className="bg-white py-14 md:py-16">
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-emerald-600 via-teal-700 to-emerald-500 py-16 text-white md:py-24">
+  {/* Decorative curved background */}
+  <svg
+    className="pointer-events-none absolute inset-0 -z-10 h-full w-full"
+    viewBox="0 0 1440 600"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
+    <defs>
+      <linearGradient id="heroWave" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#064e3b" stopOpacity="0.8" />
+        <stop offset="100%" stopColor="#10b981" stopOpacity="0.15" />
+      </linearGradient>
+    </defs>
+    <path
+      d="M0 0H420C300 140 160 180 0 220Z"
+      fill="#047857"
+      opacity="0.55"
+    />
+    <path
+      d="M0 410C300 570 700 600 1440 390V600H0Z"
+      fill="#6ee7b7"
+      opacity="0.6"
+    />
+    <path
+      d="M0 465C360 610 820 600 1440 435V600H0Z"
+      fill="#a7f3d0"
+      opacity="0.5"
+    />
+    <path
+      d="M0 510C420 630 950 610 1440 480V600H0Z"
+      fill="url(#heroWave)"
+    />
+    <g
+      fill="none"
+      stroke="#d1fae5"
+      strokeWidth="4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      opacity="0.35"
+    >
+      <path d="M30 300H95L110 275L130 330L150 240L172 300H215" />
+      <path d="M1230 220H1290L1310 195L1330 245L1350 165L1370 220H1430" />
+    </g>
+    <g
+      fill="none"
+      stroke="#d1fae5"
+      strokeWidth="5"
+      strokeLinecap="round"
+      opacity="0.45"
+    >
+      <path d="M1330 75V125M1305 100H1355" />
+      <path d="M90 340V380M70 360H110" />
+    </g>
+  </svg>
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
 
