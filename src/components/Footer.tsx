@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="bg-teal-900 text-white mt-16">
       <div className="container-custom py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3">
           {/* About */}
           <div>
             <h3 className="text-lg font-bold mb-3">
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+            <div className="min-w-0">
             <h3 className="text-lg font-bold mb-3">
               {t("দ্রুত লিংক", "Quick Links")}
             </h3>
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+            <div className="min-w-0">
             <h3 className="text-lg font-bold mb-3">
               {t("যোগাযোগ", "Contact")}
             </h3>
