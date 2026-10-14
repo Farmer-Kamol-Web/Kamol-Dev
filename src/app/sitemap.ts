@@ -5,13 +5,7 @@ const siteUrl = (
 ).replace(/\/$/, "");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    "",
-    "/about",
-    "/services",
-    "/chamber",
-    "/contact",
-  ];
+  const routes = ["", "/about", "/services", "/chamber", "/contact"];
 
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,

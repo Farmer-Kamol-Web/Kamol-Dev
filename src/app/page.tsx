@@ -1,37 +1,38 @@
-
 "use client";
 
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
 
-
 export default function Home() {
   const { t } = useLanguage();
 
   return (
     <main className="min-h-screen">
-{/* Hero Section */}
-<section
-  className="relative overflow-hidden bg-teal-900 text-white py-16 md:py-24"
-  style={{
-    backgroundImage: "url('/images/hero-bg.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
->
-  <div
-    aria-hidden="true"
-    className="absolute inset-0 z-0 bg-gradient-to-r from-teal-950/90 via-teal-900/75 to-teal-800/50"
-  />
+      {/* Hero Section */}
+      <section
+        className="relative overflow-hidden bg-teal-900 text-white py-16 md:py-24"
+        style={{
+          backgroundImage: "url('/images/hero-bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 z-0 bg-gradient-to-r from-teal-950/90 via-teal-900/75 to-teal-800/50"
+        />
 
-  <div className="container-custom relative z-10">
+        <div className="container-custom relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-10">
             {/* Left Content */}
             <div className="flex-1 text-center md:text-left">
               <p className="text-teal-200 font-medium mb-2">
-                {t("হৃদরোগ ও মেডিসিন বিশেষজ্ঞ", "Cardiologist & Medicine Specialist")}
+                {t(
+                  "হৃদরোগ ও মেডিসিন বিশেষজ্ঞ",
+                  "Cardiologist & Medicine Specialist",
+                )}
               </p>
               <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
                 {t("ডাঃ মোঃ আবু কালাম", "Dr. Md. Abu Kalam")}
@@ -39,7 +40,7 @@ export default function Home() {
               <p className="text-teal-100 text-lg mb-6 max-w-xl">
                 {t(
                   "এমবিবিএস (আরএমসি), বিসিএস (স্বাস্থ্য), এফসিপিএস (কার্ডিওলজি) ফাইনাল পার্ট",
-                  "MBBS (RMC), BCS (Health), FCPS (Cardiology) Final Part"
+                  "MBBS (RMC), BCS (Health), FCPS (Cardiology) Final Part",
                 )}
               </p>
 
@@ -59,84 +60,81 @@ export default function Home() {
               </div>
             </div>
 
-
-{/* Right - Doctor's Real Photo */}
-<div className="flex-shrink-0">
- <div className="relative w-48 h-48 md:w-68 md:h-68 overflow-hidden rounded-full border-4 border-white/70 shadow-xl">
-    <Image
-      src="/images/doctor-abu-kalam.jpeg"
-      alt="ডাঃ মোঃ আবু কালাম — হৃদরোগ ও মেডিসিন বিশেষজ্ঞ"
-      fill
-      priority
-      sizes="(max-width: 768px) 192px, 256px"
-      className="object-cover object-top scale-110"
-    />
-  </div>
-</div>
-
+            {/* Right - Doctor's Real Photo */}
+            <div className="flex-shrink-0">
+              <div className="relative w-48 h-48 md:w-68 md:h-68 overflow-hidden rounded-full border-4 border-white/70 shadow-xl">
+                <Image
+                  src="/images/doctor-abu-kalam.jpeg"
+                  alt="ডাঃ মোঃ আবু কালাম — হৃদরোগ ও মেডিসিন বিশেষজ্ঞ"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 192px, 256px"
+                  className="object-cover object-top scale-110"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Quick Info Cards */}
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-emerald-600 via-teal-700 to-emerald-500 py-16 text-white md:py-24">
-  {/* Decorative curved background */}
-  <svg
-    className="pointer-events-none absolute inset-0 -z-10 h-full w-full"
-    viewBox="0 0 1440 600"
-    preserveAspectRatio="none"
-    aria-hidden="true"
-  >
-    <defs>
-      <linearGradient id="heroWave" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#064e3b" stopOpacity="0.8" />
-        <stop offset="100%" stopColor="#10b981" stopOpacity="0.15" />
-      </linearGradient>
-    </defs>
-    <path
-      d="M0 0H420C300 140 160 180 0 220Z"
-      fill="#047857"
-      opacity="0.55"
-    />
-    <path
-      d="M0 410C300 570 700 600 1440 390V600H0Z"
-      fill="#6ee7b7"
-      opacity="0.6"
-    />
-    <path
-      d="M0 465C360 610 820 600 1440 435V600H0Z"
-      fill="#a7f3d0"
-      opacity="0.5"
-    />
-    <path
-      d="M0 510C420 630 950 610 1440 480V600H0Z"
-      fill="url(#heroWave)"
-    />
-    <g
-      fill="none"
-      stroke="#d1fae5"
-      strokeWidth="4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      opacity="0.35"
-    >
-      <path d="M30 300H95L110 275L130 330L150 240L172 300H215" />
-      <path d="M1230 220H1290L1310 195L1330 245L1350 165L1370 220H1430" />
-    </g>
-    <g
-      fill="none"
-      stroke="#d1fae5"
-      strokeWidth="5"
-      strokeLinecap="round"
-      opacity="0.45"
-    >
-      <path d="M1330 75V125M1305 100H1355" />
-      <path d="M90 340V380M70 360H110" />
-    </g>
-  </svg>
+        {/* Decorative curved background */}
+        <svg
+          className="pointer-events-none absolute inset-0 -z-10 h-full w-full"
+          viewBox="0 0 1440 600"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="heroWave" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#064e3b" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="#10b981" stopOpacity="0.15" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0 0H420C300 140 160 180 0 220Z"
+            fill="#047857"
+            opacity="0.55"
+          />
+          <path
+            d="M0 410C300 570 700 600 1440 390V600H0Z"
+            fill="#6ee7b7"
+            opacity="0.6"
+          />
+          <path
+            d="M0 465C360 610 820 600 1440 435V600H0Z"
+            fill="#a7f3d0"
+            opacity="0.5"
+          />
+          <path
+            d="M0 510C420 630 950 610 1440 480V600H0Z"
+            fill="url(#heroWave)"
+          />
+          <g
+            fill="none"
+            stroke="#d1fae5"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            opacity="0.35"
+          >
+            <path d="M30 300H95L110 275L130 330L150 240L172 300H215" />
+            <path d="M1230 220H1290L1310 195L1330 245L1350 165L1370 220H1430" />
+          </g>
+          <g
+            fill="none"
+            stroke="#d1fae5"
+            strokeWidth="5"
+            strokeLinecap="round"
+            opacity="0.45"
+          >
+            <path d="M1330 75V125M1305 100H1355" />
+            <path d="M90 340V380M70 360H110" />
+          </g>
+        </svg>
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-
             {/* Chamber Time */}
             <div className="group rounded-2xl border border-teal-100 bg-teal-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-lg">
               <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-100 text-teal-700 transition-colors group-hover:bg-teal-700 group-hover:text-white">
@@ -196,7 +194,7 @@ export default function Home() {
               <p className="leading-relaxed text-gray-700">
                 {t(
                   "শাহ্ সুলতান হসপিটাল অ্যান্ড ডায়াগনস্টিক সেন্টার, হাসপাতাল রোড, শেরপুর, বগুড়া",
-                  "Shah Sultan Hospital & Diagnostic Center, Hospital Road, Sherpur, Bogura"
+                  "Shah Sultan Hospital & Diagnostic Center, Hospital Road, Sherpur, Bogura",
                 )}
               </p>
             </div>
@@ -243,7 +241,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </section>

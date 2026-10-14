@@ -10,15 +10,19 @@ export default function ServicesPage() {
       icon: "❤️",
       titleBn: "হৃদরোগ পরীক্ষা ও চিকিৎসা",
       titleEn: "Heart Disease Checkup & Treatment",
-      descBn: "বুক ব্যথা, ধড়ফড়ানি, উচ্চ রক্তচাপসহ হৃদরোগ সংক্রান্ত সকল সমস্যার পরামর্শ ও চিকিৎসা।",
-      descEn: "Consultation and treatment for chest pain, palpitation, high blood pressure and all heart related problems.",
+      descBn:
+        "বুক ব্যথা, ধড়ফড়ানি, উচ্চ রক্তচাপসহ হৃদরোগ সংক্রান্ত সকল সমস্যার পরামর্শ ও চিকিৎসা।",
+      descEn:
+        "Consultation and treatment for chest pain, palpitation, high blood pressure and all heart related problems.",
     },
     {
       icon: "🩺",
       titleBn: "মেডিসিন কনসালটেশন",
       titleEn: "Medicine Consultation",
-      descBn: "সাধারণ ও জটিল মেডিসিন সংক্রান্ত রোগের পরামর্শ ও চিকিৎসা পরিকল্পনা।",
-      descEn: "Advice and treatment planning for general and complex medical conditions.",
+      descBn:
+        "সাধারণ ও জটিল মেডিসিন সংক্রান্ত রোগের পরামর্শ ও চিকিৎসা পরিকল্পনা।",
+      descEn:
+        "Advice and treatment planning for general and complex medical conditions.",
     },
     {
       icon: "📡",
@@ -31,21 +35,25 @@ export default function ServicesPage() {
       icon: "💊",
       titleBn: "প্রেসক্রিপশন ও ফলোআপ",
       titleEn: "Prescription & Follow-up",
-      descBn: "সঠিক ওষুধ নির্ধারণ এবং নিয়মিত ফলোআপের মাধ্যমে চিকিৎসা নিশ্চিতকরণ।",
-      descEn: "Accurate prescription and regular follow-up to ensure proper treatment.",
+      descBn:
+        "সঠিক ওষুধ নির্ধারণ এবং নিয়মিত ফলোআপের মাধ্যমে চিকিৎসা নিশ্চিতকরণ।",
+      descEn:
+        "Accurate prescription and regular follow-up to ensure proper treatment.",
     },
     {
       icon: "🏥",
       titleBn: "রোগ নির্ণয় ও পরামর্শ",
       titleEn: "Diagnosis & Counseling",
-      descBn: "রোগীর লক্ষণ অনুযায়ী সঠিক রোগ নির্ণয় এবং জীবনযাত্রা বিষয়ক পরামর্শ।",
+      descBn:
+        "রোগীর লক্ষণ অনুযায়ী সঠিক রোগ নির্ণয় এবং জীবনযাত্রা বিষয়ক পরামর্শ।",
       descEn: "Accurate diagnosis based on symptoms and lifestyle counseling.",
     },
     {
       icon: "📋",
       titleBn: "স্বাস্থ্য পরীক্ষা পরামর্শ",
       titleEn: "Health Checkup Advice",
-      descBn: "কোন পরীক্ষা করাতে হবে এবং কখন করাতে হবে সে বিষয়ে বিস্তারিত পরামর্শ।",
+      descBn:
+        "কোন পরীক্ষা করাতে হবে এবং কখন করাতে হবে সে বিষয়ে বিস্তারিত পরামর্শ।",
       descEn: "Detailed advice on which tests are needed and when to do them.",
     },
   ];
@@ -61,7 +69,7 @@ export default function ServicesPage() {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {t(
               "হৃদরোগ ও মেডিসিন বিষয়ক সম্পূর্ণ পরামর্শ ও চিকিৎসা সেবা",
-              "Complete consultation and treatment services for heart disease and medicine"
+              "Complete consultation and treatment services for heart disease and medicine",
             )}
           </p>
           <div className="w-20 h-1 bg-teal-600 mx-auto rounded mt-4"></div>

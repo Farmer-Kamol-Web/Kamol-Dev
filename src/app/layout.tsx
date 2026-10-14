@@ -57,12 +57,12 @@ export default function RootLayout({
   return (
     <html lang="bn">
       <body className={`${inter.variable} ${notoBengali.variable} antialiased`}>
-<LanguageProvider>
-  <Navbar />
-  <main className="min-h-[70vh]">{children}</main>
-  <Footer />
-  <WhatsAppButton />
-</LanguageProvider>
+        <LanguageProvider>
+          <Navbar />
+          <main className="min-h-[70vh]">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </LanguageProvider>
       </body>
     </html>
   );
